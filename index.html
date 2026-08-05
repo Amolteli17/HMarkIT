@@ -1,24 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HMarkIT - Software Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMarkIT - Software Services</title>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="HMarkIT provides software services including web and mobile app development.">
-  <meta name="keywords" content="HMarkIT, software services, web development, mobile apps, IT company, Pune, India">
-  <meta name="author" content="HMarkIT">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="HMarkIT provides software services including web and mobile app development.">
+    <meta name="keywords" content="HMarkIT, software services, web development, mobile apps, IT company, Pune, India">
+    <meta name="author" content="HMarkIT">
 
-  <!-- Open Graph (for social sharing) -->
-  <meta property="og:title" content="HMarkIT - Software Services">
-  <meta property="og:description" content="Your trusted partner for Web & Mobile App Development.">
-  <meta property="og:url" content="https://hmarkit.com">
-  <meta property="og:type" content="website">
+    <!-- Open Graph (for social sharing) -->
+    <meta property="og:title" content="HMarkIT - Software Services">
+    <meta property="og:description" content="Your trusted partner for Web & Mobile App Development.">
+    <meta property="og:url" content="https://hmarkit.com">
+    <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --dark: #07111f;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI',sans-serif;
+        }
+
+        .navbar {
+            background: var(--dark);
+        }
+
+        .navbar-brand {
+            color: var(--primary) !important;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(7,17,31,.85),rgba(7,17,31,.85)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+            .hero h1 {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            .hero span {
+                color: var(--primary);
+            }
+
+        .feature-card, .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            transition: .3s;
+            height: 100%;
+        }
+
+            .feature-card:hover, .service-card:hover {
+                transform: translateY(-8px);
+            }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .cta {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
-<body>
+
+<!-- Old UI -->
+<!--<body>
   <header>
     <h1>HMarkIT</h1>
     <p>Your trusted partner for Web & Mobile App Development</p>
@@ -54,5 +132,267 @@
   <footer>
     <p>&copy; 2026 HMarkIT. All rights reserved.</p>
   </footer>
+</body>-->
+
+<!-- New UI -->
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="Homepage.html">
+                <span style="color:red;">H</span><span style="color:blue;">Mark</span><span style="color:#FFD700;">IT</span>
+                <span style="color:blue;">Solutions</span>
+            </a>
+
+            <button class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Homepage.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="contact.html" class="btn btn-primary ms-3">
+                    Get Started
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h5 class="text-primary">
+                        WELCOME TO HMARKIT SOLUTIONS
+                    </h5>
+
+                    <h1>
+                        Transforming Ideas Into
+                        <span>Digital Solutions</span>
+                    </h1>
+
+                    <p class="lead mt-4">
+                        Helping startups and businesses build innovative websites,
+                        custom software and modern digital experiences.
+                    </p>
+
+                    <a href="services.html"
+                       class="btn btn-primary btn-lg me-2">
+                        Explore Services
+                    </a>
+
+                    <a href="contact.html"
+                       class="btn btn-outline-light btn-lg">
+                        Contact Us
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                         class="img-fluid"
+                         alt="IT Services">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Why Choose HMarkIT Solutions?</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h4>Innovation</h4>
+                        <p>Creative technology solutions for modern businesses.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                        <h4>Modern Development</h4>
+                        <p>Using the latest technologies and best practices.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                        <h4>Support</h4>
+                        <p>Reliable support and continuous improvement.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <h4>Web Development</h4>
+                        <p>Responsive websites and web applications.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <h4>Software Development</h4>
+                        <p>Custom software solutions tailored to your business.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <h4>UI/UX Design</h4>
+                        <p>Modern and user-friendly digital experiences.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary">
+                    View All Services
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Process -->
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Our Process</h2>
+            </div>
+
+            <div class="row text-center">
+
+                <div class="col-md-2">
+                    <h5>1</h5>
+                    <p>Discover</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>2</h5>
+                    <p>Plan</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>3</h5>
+                    <p>Design</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>4</h5>
+                    <p>Develop</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>5</h5>
+                    <p>Test</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>6</h5>
+                    <p>Launch</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="container text-center">
+
+            <h2>Ready To Start Your Project?</h2>
+
+            <p class="lead my-4">
+                Let's build something amazing together.
+            </p>
+
+            <a href="contact.html"
+               class="btn btn-primary btn-lg">
+                Contact Us Today
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 HMarkIT Solutions. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
